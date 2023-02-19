@@ -266,7 +266,7 @@ ul.myUL {
     }
     
 }
-@media (max-width:990px) {
+@media (max-width:450px) {
     .about{
         display: flex;
         /* background: url("https://cutewallpaper.org/21/web-background-images/Web-Design-When-the-Background-Becomes-the-Main-Stage-.png") no-repeat center; */
