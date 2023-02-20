@@ -1,17 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
 *{
+    overflow x:hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
 }
 
 .max-width{
@@ -24,7 +17,7 @@ html,body
     position: fixed;
     width: 100%;
     padding: 30px 0;
-    background: crimson;
+    /* background: crimson; */
     z-index: 999;
     font-family: sans-serif;
     transition: all 0.3s ease;
@@ -124,7 +117,7 @@ html,body
 }
 .about .about-content{
     margin-left: 500px;
-    margin-top: 100px;
+    margin-top: 70px;
     font-size: 25px;
 }
 
@@ -181,7 +174,45 @@ ul.myUL {
 }
 
 
-.contactN{
+.about .about-content .column{
+    width: 55%;
+}
+.about .about-content .column .text{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .column .text span{
+    color: crimson;
+
+}
+.about .about-content .column p{
+    text-align: justify;
+}
+.about .about-content .column a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content .column a:hover{
+    color: crimson;
+    background: none;
+}
+
+
+.skills .title{
+    /* background: #fff; */
+    padding-bottom: 50%;
+}
+
+.skills{
     display: flex;
     background: url("skills.png") no-repeat center;
     /* background-attachment: fixed; */
@@ -194,9 +225,56 @@ ul.myUL {
     font-family: 'Hind Siliguri', sans-serif;
     
 }
-.contactN .max-width{
+.skills .max-width{
     margin: auto 0 auto 40px;
 }
+
+.skills .skills-content .column .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .column .info{
+    display: flex;
+    margin-bottom: 5px;
+    width: 300%;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .column span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .column .line{
+    height:5px;
+    width: 300%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .column .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills .skills-content .column .c::before{
+    width: 80%;
+}
+.skills .skills-content .column .DSA::before{
+    width: 70%;
+}
+.skills .skills-content .column .ML::before{
+    width: 50%;
+}
+.skills .skills-content .column .html::before{
+    width: 80%;
+}
+.skills .skills-content .column .css::before{
+    width: 70%;
+}
+
+
 
 .icon{
     font-size: 40px;
@@ -266,7 +344,8 @@ ul.myUL {
     }
     
 }
-@media (max-width:450px) {
+
+@media (max-width:490px) {
     .about{
         display: flex;
         /* background: url("https://cutewallpaper.org/21/web-background-images/Web-Design-When-the-Background-Becomes-the-Main-Stage-.png") no-repeat center; */
@@ -281,10 +360,29 @@ ul.myUL {
 
     .about .about-content{
         margin-left: 2px;
-        margin-top: 90%;
+        margin-top: 50%;
         font-size: 10px;
-        border-top:50px;
-        padding-top : 50px;
+    }
+    
+}
+
+@media (max-width:990px) {
+    .about{
+        display: flex;
+        /* background: url("https://cutewallpaper.org/21/web-background-images/Web-Design-When-the-Background-Becomes-the-Main-Stage-.png") no-repeat center; */
+        background: url("aboutmedia.png") no-repeat center;
+        /* background-attachment: fixed; */
+        /* height: 100vah; */
+        background-size:cover ;
+        color: #fff;
+        min-height: 900px;
+        font-family: 'Hind Siliguri', sans-serif;
+    }
+
+    .about .about-content{
+        margin-left: 2px;
+        margin-top: 50%;
+        font-size: 20px;
     }
     
 }
@@ -357,6 +455,62 @@ ul.myUL {
         font-size: 25px;
 
     }
+}
+
+@media (max-width: 930px){
+    .skills .skills-content .column .info{
+        display: flex;
+        margin-bottom: 5px;
+        width: 170%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .skills .skills-content .column .line{
+        height:5px;
+        width: 170%;
+        background: lightgrey;
+        position: relative;
+    }
+}
+@media (max-width: 530px){
+    .skills .skills-content .column .info{
+        display: flex;
+        margin-bottom: 5px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .skills .skills-content .column .line{
+        height:5px;
+        width: 100%;
+        background: lightgrey;
+        position: relative;
+    }
+    
+}
+
+@media (max-width: 930px){
+    .max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    /* background: crimson; */
+    z-index: 999;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: crimson;
+}
+      
 }
 
 .contact-content .copyright{
